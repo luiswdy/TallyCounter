@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bWi-5u-KOF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Tally Counter-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="TallyCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJm-dj-3pg" customClass="CustomRoundButton" customModule="TallyCounter" customModuleProvider="target">
+                                <rect key="frame" x="60" y="360" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xJm-dj-3pg" secondAttribute="height" multiplier="1:1" id="CKc-cp-coj"/>
+                                    <constraint firstAttribute="width" constant="150" id="ceW-w7-9R5"/>
+                                    <constraint firstAttribute="height" constant="150" id="ydf-6Q-ICI"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ceW-w7-9R5"/>
+                                        <exclude reference="ydf-6Q-ICI"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEv-2C-YrK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d0-Dd-CFN" customClass="CustomRoundButton" customModule="TallyCounter" customModuleProvider="target">
+                                <rect key="frame" x="360" y="360" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="7A5-HR-7h5"/>
+                                    <constraint firstAttribute="width" constant="150" id="Bc4-sx-oWq"/>
+                                    <constraint firstAttribute="width" secondItem="0d0-Dd-CFN" secondAttribute="height" multiplier="1:1" id="J6F-pT-Z0E"/>
+                                    <constraint firstAttribute="height" constant="50" id="N7U-HU-hRs"/>
+                                    <constraint firstAttribute="height" constant="150" id="u4R-OM-vy8"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7A5-HR-7h5"/>
+                                        <exclude reference="Bc4-sx-oWq"/>
+                                        <exclude reference="N7U-HU-hRs"/>
+                                        <exclude reference="u4R-OM-vy8"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j5a-32-dHU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s48-sJ-oF4">
+                                <rect key="frame" x="60" y="124" width="481" height="176"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="s48-sJ-oF4" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" multiplier="1:2" id="44Q-cP-o1y"/>
+                            <constraint firstItem="s48-sJ-oF4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ANx-PU-pTk"/>
+                            <constraint firstItem="s48-sJ-oF4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="BaL-Qn-c2I"/>
+                            <constraint firstItem="s48-sJ-oF4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KGt-Rq-Jpf"/>
+                            <constraint firstItem="xJm-dj-3pg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="1:4" id="MeT-gl-AZf"/>
+                            <constraint firstItem="0d0-Dd-CFN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="3:4" id="NBU-pa-OPh"/>
+                            <constraint firstItem="xJm-dj-3pg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="NFB-ty-yPt"/>
+                            <constraint firstItem="s48-sJ-oF4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" constant="1" id="kWn-gz-z6o"/>
+                            <constraint firstItem="0d0-Dd-CFN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="ucZ-N7-WLN"/>
+                            <constraint firstItem="xJm-dj-3pg" firstAttribute="top" secondItem="0d0-Dd-CFN" secondAttribute="top" id="wMz-42-nKw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0d0-Dd-CFN" secondAttribute="bottom" multiplier="1:0.9" id="zkC-5S-wew"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ANx-PU-pTk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tally Counter" id="Wmd-jA-BS9">
+                        <barButtonItem key="rightBarButtonItem" image="Image" style="plain" id="SJN-Mz-Nah">
+                            <connections>
+                                <segue destination="DeX-W9-k0U" kind="show" id="OXB-jR-VkF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="_btnAdd" destination="0d0-Dd-CFN" id="Im4-o1-pQ2"/>
+                        <outlet property="_btnReset" destination="xJm-dj-3pg" id="t8c-vg-rha"/>
+                        <outlet property="_lblCount" destination="s48-sJ-oF4" id="4KB-Q6-3gt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1893" y="196"/>
+        </scene>
+        <!--Settigns View Controller-->
+        <scene sceneID="K2E-3z-fmS">
+            <objects>
+                <tableViewController id="DeX-W9-k0U" customClass="SettignsViewController" customModule="TallyCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="n4q-65-WvP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="qeV-Fc-Nag">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="4RG-3H-hJl" rowHeight="70" style="IBUITableViewCellStyleDefault" id="GbI-pz-Wei">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GbI-pz-Wei" id="DmW-sB-IHJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="561" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4RG-3H-hJl">
+                                                    <rect key="frame" x="15" y="0.0" width="546" height="69"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="Gv8-qx-09O" rowHeight="70" style="IBUITableViewCellStyleDefault" id="dyZ-Ja-hH0">
+                                        <rect key="frame" x="0.0" y="134" width="600" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dyZ-Ja-hH0" id="pGe-T4-dPj">
+                                            <rect key="frame" x="0.0" y="0.0" width="561" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Vibration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gv8-qx-09O">
+                                                    <rect key="frame" x="15" y="0.0" width="546" height="69"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="DeX-W9-k0U" id="xUT-IV-hI1"/>
+                            <outlet property="delegate" destination="DeX-W9-k0U" id="wFL-A1-dwF"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="_enabledSound" destination="GbI-pz-Wei" id="qNQ-2v-hOu"/>
+                        <outlet property="_enabledVibration" destination="dyZ-Ja-hH0" id="SQN-oB-1Vr"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0A-Fp-5dO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2585" y="194"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1J6-el-ckc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bWi-5u-KOF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cpW-MJ-0NT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pdk-Uy-KB0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNK-2o-RjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="196"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="38" height="38"/>
+    </resources>
+</document>

@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B29F22F1488AF4DFB91D9C44 /* Pods_TallyCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18B8AA11A80D8CC01373A00 /* Pods_TallyCounter.framework */; };
+		E9179B661CAA487500D93CB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9179B651CAA487500D93CB1 /* Assets.xcassets */; };
+		E92B539C1CA3987D0085B050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B539B1CA3987D0085B050 /* AppDelegate.swift */; };
+		E92B53A11CA3987D0085B050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92B539F1CA3987D0085B050 /* Main.storyboard */; };
+		E92B53A61CA3987D0085B050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92B53A41CA3987D0085B050 /* LaunchScreen.storyboard */; };
+		E92B53B11CA3987D0085B050 /* TallyCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B53B01CA3987D0085B050 /* TallyCounterTests.swift */; };
+		E92B53BC1CA3987D0085B050 /* TallyCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B53BB1CA3987D0085B050 /* TallyCounterUITests.swift */; };
+		E974C0FE1CB4F6B200CC7721 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C0FB1CB4F6B200CC7721 /* Aliases.swift */; };
+		E974C0FF1CB4F6B200CC7721 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C0FC1CB4F6B200CC7721 /* Enums.swift */; };
+		E974C1001CB4F6B200CC7721 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C0FD1CB4F6B200CC7721 /* UIColor+Extension.swift */; };
+		E974C1041CB4F6FD00CC7721 /* RemoteControlSetupHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C1021CB4F6FD00CC7721 /* RemoteControlSetupHelper.swift */; };
+		E974C1051CB4F6FD00CC7721 /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C1031CB4F6FD00CC7721 /* UserDefaultHelper.swift */; };
+		E974C1081CB4F78500CC7721 /* CustomeRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C1071CB4F78500CC7721 /* CustomeRoundButton.swift */; };
+		E974C10C1CB4F80E00CC7721 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C10A1CB4F80E00CC7721 /* MainViewController.swift */; };
+		E974C10D1CB4F80E00CC7721 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C10B1CB4F80E00CC7721 /* MainViewModel.swift */; };
+		E974C10F1CB4F83800CC7721 /* Clues.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C10E1CB4F83800CC7721 /* Clues.swift */; };
+		E974C1121CB4F86400CC7721 /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C1111CB4F86400CC7721 /* StateModel.swift */; };
+		E974C1151CB5019B00CC7721 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C1141CB5019B00CC7721 /* SettingsViewController.swift */; };
+		E974C1171CB50A8300CC7721 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C1161CB50A8300CC7721 /* SettingsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E92B53AD1CA3987D0085B050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E92B53901CA3987D0085B050 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E92B53971CA3987D0085B050;
+			remoteInfo = TallyCounter;
+		};
+		E92B53B81CA3987D0085B050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E92B53901CA3987D0085B050 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E92B53971CA3987D0085B050;
+			remoteInfo = TallyCounter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7E833506228FB4964C2CCA2 /* Pods-TallyCounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TallyCounter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TallyCounter/Pods-TallyCounter.debug.xcconfig"; sourceTree = "<group>"; };
+		DB8220758B91C041F5D5E89F /* Pods-TallyCounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TallyCounter.release.xcconfig"; path = "Pods/Target Support Files/Pods-TallyCounter/Pods-TallyCounter.release.xcconfig"; sourceTree = "<group>"; };
+		E18B8AA11A80D8CC01373A00 /* Pods_TallyCounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TallyCounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9179B651CAA487500D93CB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E92B53981CA3987D0085B050 /* TallyCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TallyCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B539B1CA3987D0085B050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E92B53A01CA3987D0085B050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E92B53A51CA3987D0085B050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E92B53A71CA3987D0085B050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E92B53AC1CA3987D0085B050 /* TallyCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TallyCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B53B01CA3987D0085B050 /* TallyCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyCounterTests.swift; sourceTree = "<group>"; };
+		E92B53B21CA3987D0085B050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E92B53B71CA3987D0085B050 /* TallyCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TallyCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B53BB1CA3987D0085B050 /* TallyCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyCounterUITests.swift; sourceTree = "<group>"; };
+		E92B53BD1CA3987D0085B050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E974C0FB1CB4F6B200CC7721 /* Aliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Aliases.swift; path = Commons/Aliases.swift; sourceTree = "<group>"; };
+		E974C0FC1CB4F6B200CC7721 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = Commons/Enums.swift; sourceTree = "<group>"; };
+		E974C0FD1CB4F6B200CC7721 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Commons/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E974C1021CB4F6FD00CC7721 /* RemoteControlSetupHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemoteControlSetupHelper.swift; path = Helpers/RemoteControlSetupHelper.swift; sourceTree = "<group>"; };
+		E974C1031CB4F6FD00CC7721 /* UserDefaultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultHelper.swift; path = Helpers/UserDefaultHelper.swift; sourceTree = "<group>"; };
+		E974C1071CB4F78500CC7721 /* CustomeRoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomeRoundButton.swift; path = UIs/CustomeRoundButton.swift; sourceTree = "<group>"; };
+		E974C10A1CB4F80E00CC7721 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Main/MainViewController.swift; sourceTree = "<group>"; };
+		E974C10B1CB4F80E00CC7721 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewModel.swift; path = Main/MainViewModel.swift; sourceTree = "<group>"; };
+		E974C10E1CB4F83800CC7721 /* Clues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Clues.swift; path = Main/Clues.swift; sourceTree = "<group>"; };
+		E974C1111CB4F86400CC7721 /* StateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StateModel.swift; path = Models/StateModel.swift; sourceTree = "<group>"; };
+		E974C1141CB5019B00CC7721 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Settings/SettingsViewController.swift; sourceTree = "<group>"; };
+		E974C1161CB50A8300CC7721 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewModel.swift; path = Settings/SettingsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E92B53951CA3987D0085B050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29F22F1488AF4DFB91D9C44 /* Pods_TallyCounter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92B53A91CA3987D0085B050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92B53B41CA3987D0085B050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		168D254F0D91D6BEA28C10DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7E833506228FB4964C2CCA2 /* Pods-TallyCounter.debug.xcconfig */,
+				DB8220758B91C041F5D5E89F /* Pods-TallyCounter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2263F11BB97CDD0AB8CD4C05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E18B8AA11A80D8CC01373A00 /* Pods_TallyCounter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E92B538F1CA3987D0085B050 = {
+			isa = PBXGroup;
+			children = (
+				E92B539A1CA3987D0085B050 /* TallyCounter */,
+				E92B53AF1CA3987D0085B050 /* TallyCounterTests */,
+				E92B53BA1CA3987D0085B050 /* TallyCounterUITests */,
+				E92B53991CA3987D0085B050 /* Products */,
+				168D254F0D91D6BEA28C10DF /* Pods */,
+				2263F11BB97CDD0AB8CD4C05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E92B53991CA3987D0085B050 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E92B53981CA3987D0085B050 /* TallyCounter.app */,
+				E92B53AC1CA3987D0085B050 /* TallyCounterTests.xctest */,
+				E92B53B71CA3987D0085B050 /* TallyCounterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E92B539A1CA3987D0085B050 /* TallyCounter */ = {
+			isa = PBXGroup;
+			children = (
+				E974C1101CB4F84000CC7721 /* Models */,
+				E974C1061CB4F74500CC7721 /* UIs */,
+				E974C1011CB4F6CD00CC7721 /* Helpers */,
+				E974C0FA1CB4F6A300CC7721 /* Commons */,
+				E974C1091CB4F7BC00CC7721 /* Main */,
+				E974C1131CB5016300CC7721 /* Settings */,
+				E9179B651CAA487500D93CB1 /* Assets.xcassets */,
+				E92B539B1CA3987D0085B050 /* AppDelegate.swift */,
+				E92B539F1CA3987D0085B050 /* Main.storyboard */,
+				E92B53A41CA3987D0085B050 /* LaunchScreen.storyboard */,
+				E92B53A71CA3987D0085B050 /* Info.plist */,
+			);
+			path = TallyCounter;
+			sourceTree = "<group>";
+		};
+		E92B53AF1CA3987D0085B050 /* TallyCounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				E92B53B01CA3987D0085B050 /* TallyCounterTests.swift */,
+				E92B53B21CA3987D0085B050 /* Info.plist */,
+			);
+			path = TallyCounterTests;
+			sourceTree = "<group>";
+		};
+		E92B53BA1CA3987D0085B050 /* TallyCounterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E92B53BB1CA3987D0085B050 /* TallyCounterUITests.swift */,
+				E92B53BD1CA3987D0085B050 /* Info.plist */,
+			);
+			path = TallyCounterUITests;
+			sourceTree = "<group>";
+		};
+		E974C0FA1CB4F6A300CC7721 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				E974C0FB1CB4F6B200CC7721 /* Aliases.swift */,
+				E974C0FC1CB4F6B200CC7721 /* Enums.swift */,
+				E974C0FD1CB4F6B200CC7721 /* UIColor+Extension.swift */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		E974C1011CB4F6CD00CC7721 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E974C1021CB4F6FD00CC7721 /* RemoteControlSetupHelper.swift */,
+				E974C1031CB4F6FD00CC7721 /* UserDefaultHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		E974C1061CB4F74500CC7721 /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+				E974C1071CB4F78500CC7721 /* CustomeRoundButton.swift */,
+			);
+			name = UIs;
+			sourceTree = "<group>";
+		};
+		E974C1091CB4F7BC00CC7721 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E974C10E1CB4F83800CC7721 /* Clues.swift */,
+				E974C10A1CB4F80E00CC7721 /* MainViewController.swift */,
+				E974C10B1CB4F80E00CC7721 /* MainViewModel.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		E974C1101CB4F84000CC7721 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E974C1111CB4F86400CC7721 /* StateModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E974C1131CB5016300CC7721 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E974C1141CB5019B00CC7721 /* SettingsViewController.swift */,
+				E974C1161CB50A8300CC7721 /* SettingsViewModel.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E92B53971CA3987D0085B050 /* TallyCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E92B53C01CA3987D0085B050 /* Build configuration list for PBXNativeTarget "TallyCounter" */;
+			buildPhases = (
+				841E276FE4D2475429823D9D /* Check Pods Manifest.lock */,
+				E92B53941CA3987D0085B050 /* Sources */,
+				E92B53951CA3987D0085B050 /* Frameworks */,
+				E92B53961CA3987D0085B050 /* Resources */,
+				E48A3063A5665183D2F82A24 /* Embed Pods Frameworks */,
+				0922844F8B828BAA014BEE4E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TallyCounter;
+			productName = TallyCounter;
+			productReference = E92B53981CA3987D0085B050 /* TallyCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E92B53AB1CA3987D0085B050 /* TallyCounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E92B53C31CA3987D0085B050 /* Build configuration list for PBXNativeTarget "TallyCounterTests" */;
+			buildPhases = (
+				E92B53A81CA3987D0085B050 /* Sources */,
+				E92B53A91CA3987D0085B050 /* Frameworks */,
+				E92B53AA1CA3987D0085B050 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E92B53AE1CA3987D0085B050 /* PBXTargetDependency */,
+			);
+			name = TallyCounterTests;
+			productName = TallyCounterTests;
+			productReference = E92B53AC1CA3987D0085B050 /* TallyCounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E92B53B61CA3987D0085B050 /* TallyCounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E92B53C61CA3987D0085B050 /* Build configuration list for PBXNativeTarget "TallyCounterUITests" */;
+			buildPhases = (
+				E92B53B31CA3987D0085B050 /* Sources */,
+				E92B53B41CA3987D0085B050 /* Frameworks */,
+				E92B53B51CA3987D0085B050 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E92B53B91CA3987D0085B050 /* PBXTargetDependency */,
+			);
+			name = TallyCounterUITests;
+			productName = TallyCounterUITests;
+			productReference = E92B53B71CA3987D0085B050 /* TallyCounterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E92B53901CA3987D0085B050 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Luis Wu";
+				TargetAttributes = {
+					E92B53971CA3987D0085B050 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 847G2LEU54;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					E92B53AB1CA3987D0085B050 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E92B53971CA3987D0085B050;
+					};
+					E92B53B61CA3987D0085B050 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E92B53971CA3987D0085B050;
+					};
+				};
+			};
+			buildConfigurationList = E92B53931CA3987D0085B050 /* Build configuration list for PBXProject "TallyCounter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E92B538F1CA3987D0085B050;
+			productRefGroup = E92B53991CA3987D0085B050 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E92B53971CA3987D0085B050 /* TallyCounter */,
+				E92B53AB1CA3987D0085B050 /* TallyCounterTests */,
+				E92B53B61CA3987D0085B050 /* TallyCounterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E92B53961CA3987D0085B050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92B53A61CA3987D0085B050 /* LaunchScreen.storyboard in Resources */,
+				E9179B661CAA487500D93CB1 /* Assets.xcassets in Resources */,
+				E92B53A11CA3987D0085B050 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92B53AA1CA3987D0085B050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92B53B51CA3987D0085B050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0922844F8B828BAA014BEE4E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TallyCounter/Pods-TallyCounter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		841E276FE4D2475429823D9D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E48A3063A5665183D2F82A24 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TallyCounter/Pods-TallyCounter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E92B53941CA3987D0085B050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E974C0FF1CB4F6B200CC7721 /* Enums.swift in Sources */,
+				E974C1121CB4F86400CC7721 /* StateModel.swift in Sources */,
+				E974C1001CB4F6B200CC7721 /* UIColor+Extension.swift in Sources */,
+				E974C0FE1CB4F6B200CC7721 /* Aliases.swift in Sources */,
+				E974C1081CB4F78500CC7721 /* CustomeRoundButton.swift in Sources */,
+				E92B539C1CA3987D0085B050 /* AppDelegate.swift in Sources */,
+				E974C1051CB4F6FD00CC7721 /* UserDefaultHelper.swift in Sources */,
+				E974C1041CB4F6FD00CC7721 /* RemoteControlSetupHelper.swift in Sources */,
+				E974C1171CB50A8300CC7721 /* SettingsViewModel.swift in Sources */,
+				E974C10F1CB4F83800CC7721 /* Clues.swift in Sources */,
+				E974C10C1CB4F80E00CC7721 /* MainViewController.swift in Sources */,
+				E974C10D1CB4F80E00CC7721 /* MainViewModel.swift in Sources */,
+				E974C1151CB5019B00CC7721 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92B53A81CA3987D0085B050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92B53B11CA3987D0085B050 /* TallyCounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92B53B31CA3987D0085B050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92B53BC1CA3987D0085B050 /* TallyCounterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E92B53AE1CA3987D0085B050 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E92B53971CA3987D0085B050 /* TallyCounter */;
+			targetProxy = E92B53AD1CA3987D0085B050 /* PBXContainerItemProxy */;
+		};
+		E92B53B91CA3987D0085B050 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E92B53971CA3987D0085B050 /* TallyCounter */;
+			targetProxy = E92B53B81CA3987D0085B050 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E92B539F1CA3987D0085B050 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E92B53A01CA3987D0085B050 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E92B53A41CA3987D0085B050 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E92B53A51CA3987D0085B050 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E92B53BE1CA3987D0085B050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E92B53BF1CA3987D0085B050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E92B53C11CA3987D0085B050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7E833506228FB4964C2CCA2 /* Pods-TallyCounter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TallyCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.wdy.TestRemoteControlBtn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E92B53C21CA3987D0085B050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB8220758B91C041F5D5E89F /* Pods-TallyCounter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TallyCounter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.wdy.TestRemoteControlBtn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E92B53C41CA3987D0085B050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TallyCounterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.wdy.TallyCounterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TallyCounter.app/TallyCounter";
+			};
+			name = Debug;
+		};
+		E92B53C51CA3987D0085B050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TallyCounterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.wdy.TallyCounterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TallyCounter.app/TallyCounter";
+			};
+			name = Release;
+		};
+		E92B53C71CA3987D0085B050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TallyCounterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.wdy.TallyCounterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TallyCounter;
+			};
+			name = Debug;
+		};
+		E92B53C81CA3987D0085B050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TallyCounterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.wdy.TallyCounterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TallyCounter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E92B53931CA3987D0085B050 /* Build configuration list for PBXProject "TallyCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92B53BE1CA3987D0085B050 /* Debug */,
+				E92B53BF1CA3987D0085B050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E92B53C01CA3987D0085B050 /* Build configuration list for PBXNativeTarget "TallyCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92B53C11CA3987D0085B050 /* Debug */,
+				E92B53C21CA3987D0085B050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E92B53C31CA3987D0085B050 /* Build configuration list for PBXNativeTarget "TallyCounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92B53C41CA3987D0085B050 /* Debug */,
+				E92B53C51CA3987D0085B050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E92B53C61CA3987D0085B050 /* Build configuration list for PBXNativeTarget "TallyCounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92B53C71CA3987D0085B050 /* Debug */,
+				E92B53C81CA3987D0085B050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E92B53901CA3987D0085B050 /* Project object */;
+}
