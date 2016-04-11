@@ -86,7 +86,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Tally Counter" id="Wmd-jA-BS9">
-                        <barButtonItem key="rightBarButtonItem" image="Image" style="plain" id="SJN-Mz-Nah">
+                        <barButtonItem key="rightBarButtonItem" image="Image" id="SJN-Mz-Nah">
                             <connections>
                                 <segue destination="DeX-W9-k0U" kind="show" id="OXB-jR-VkF"/>
                             </connections>
