@@ -10,7 +10,7 @@ import MediaPlayer
 class RemoteControlSetupHelper {
     private static let SILENT_ASSET_NAME: String = "silent"
     private static let SILENT = NSDataAsset(name: RemoteControlSetupHelper.SILENT_ASSET_NAME)!
-    private static let _audioPlayer = try! AVAudioPlayer(data: SILENT.data, fileTypeHint: nil)
+    private static weak var _audioPlayer: AVAudioPlayer? = nil
     
     static func setupRemoteControlEventsForResign() {
         MPRemoteCommandCenter.sharedCommandCenter().playCommand.enabled = true
@@ -33,10 +33,14 @@ class RemoteControlSetupHelper {
     static func occupyControlCenter() {
         // NOTE: this is a "somewhat" workaround of getting remote control events. Without playing a sound,
         // the commands of MPRemoteCommandCenter just simply won't trigger.
-        _audioPlayer.play()
+        if _audioPlayer == nil {
+            _audioPlayer = try! AVAudioPlayer(data: SILENT.data, fileTypeHint: nil)
+        }
+        _audioPlayer?.play()
     }
     
     static func releaseControlCenter() {
-        _audioPlayer.stop()
+        _audioPlayer?.stop()
+        _audioPlayer = nil  // release
     }
 }
