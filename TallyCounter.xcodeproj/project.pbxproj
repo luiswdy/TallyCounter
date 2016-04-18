@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B29F22F1488AF4DFB91D9C44 /* Pods_TallyCounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18B8AA11A80D8CC01373A00 /* Pods_TallyCounter.framework */; };
+		E901FDB11CC4A207004FA2D6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C10B1CB4F80E00CC7721 /* MainViewModel.swift */; };
+		E901FDB21CC4A20C004FA2D6 /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C1031CB4F6FD00CC7721 /* UserDefaultHelper.swift */; };
+		E901FDB31CC4A219004FA2D6 /* Clues.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C10E1CB4F83800CC7721 /* Clues.swift */; };
+		E901FDB41CC4A21F004FA2D6 /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C1111CB4F86400CC7721 /* StateModel.swift */; };
+		E901FDB51CC4A228004FA2D6 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C0FC1CB4F6B200CC7721 /* Enums.swift */; };
+		E901FDB61CC4A23D004FA2D6 /* Aliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E974C0FB1CB4F6B200CC7721 /* Aliases.swift */; };
 		E9179B661CAA487500D93CB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9179B651CAA487500D93CB1 /* Assets.xcassets */; };
 		E92B539C1CA3987D0085B050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B539B1CA3987D0085B050 /* AppDelegate.swift */; };
 		E92B53A11CA3987D0085B050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92B539F1CA3987D0085B050 /* Main.storyboard */; };
@@ -447,6 +453,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E92B53BC1CA3987D0085B050 /* TallyCounterUITests.swift in Sources */,
+				E901FDB21CC4A20C004FA2D6 /* UserDefaultHelper.swift in Sources */,
+				E901FDB31CC4A219004FA2D6 /* Clues.swift in Sources */,
+				E901FDB61CC4A23D004FA2D6 /* Aliases.swift in Sources */,
+				E901FDB11CC4A207004FA2D6 /* MainViewModel.swift in Sources */,
+				E901FDB51CC4A228004FA2D6 /* Enums.swift in Sources */,
+				E901FDB41CC4A21F004FA2D6 /* StateModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,13 +7,17 @@
 //
 
 import XCTest
+@testable import TallyCounter
 
 class TallyCounterUITests: XCTestCase {
+    let viewModel: MainViewModel = MainViewModel()
         
     override func setUp() {
         super.setUp()
         
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        UserDefaultHelper.clearSettings()
+        viewModel.reset()
         
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
@@ -28,9 +32,16 @@ class TallyCounterUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testAddBtn() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        app.buttons["Reset"].tap()
+        app.alerts["Reset counter"].collectionViews.buttons["Yes"].tap()
+        XCTAssert(app.staticTexts["0"].exists)
+        app.buttons["Add"].tap()
+        app.staticTexts["1"].tap()
+        XCTAssert(app.staticTexts["1"].exists)
     }
     
 }

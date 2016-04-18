@@ -11,7 +11,7 @@ class RemoteControlSetupHelper {
     private static let SILENT_ASSET_NAME: String = "silent"
     private static let SILENT = NSDataAsset(name: RemoteControlSetupHelper.SILENT_ASSET_NAME)!
     private static weak var _audioPlayer: AVAudioPlayer? = nil
-    
+   
     static func setupRemoteControlEventsForResign() {
         MPRemoteCommandCenter.sharedCommandCenter().playCommand.enabled = true
         MPRemoteCommandCenter.sharedCommandCenter().togglePlayPauseCommand.enabled = false

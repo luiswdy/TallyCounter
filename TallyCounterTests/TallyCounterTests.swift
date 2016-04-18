@@ -10,7 +10,7 @@ import XCTest
 @testable import TallyCounter
 
 class TallyCounterTests: XCTestCase {
-    var viewModel: MainViewModel = MainViewModel()
+    let viewModel: MainViewModel = MainViewModel()
     
     override func setUp() {
         super.setUp()
@@ -40,8 +40,8 @@ class TallyCounterTests: XCTestCase {
     }
     
     func testReset() {
-        viewModel.add(10)
-        XCTAssert(viewModel.state.count == 10)
+        viewModel.add(IncrementType.PreviousTrack)
+        XCTAssert(viewModel.state.count == IncrementType.PreviousTrack.rawValue)
         viewModel.reset()
         XCTAssert(viewModel.state.count == 0)
     }

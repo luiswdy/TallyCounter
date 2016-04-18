@@ -109,5 +109,8 @@ class MainViewController: UIViewController {
         
     }
 
+    func getState() -> StateModel {
+        return _viewModel.state
+    }
 }
 
